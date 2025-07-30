@@ -1,11 +1,11 @@
 # pages/movies_page.py
 from base.base_page import BasePage
 from locators.movies_page_locators import MoviesPageLocators
-from pages.movie_details_page import MovieDetailsPage # Import the MovieDetailsPage
+from pages.movie_details_page import MovieDetailsPage
 
 class MoviesPage(BasePage):
 
-    URL = "http://localhost:3000/" # URL for locally hosted star wars application
+    URL = "http://localhost:3000/"
 
     def __init__(self, driver):
         super().__init__(driver)
