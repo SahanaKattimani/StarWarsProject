@@ -1,4 +1,3 @@
-# tests/test_planet_absence.py
 import pytest
 from pages.movies_page import MoviesPage
 

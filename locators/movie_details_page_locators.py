@@ -1,4 +1,3 @@
-# locators/movie_details_page_locators.py
 from selenium.webdriver.common.by import By
 
 class MovieDetailsPageLocators:

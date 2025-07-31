@@ -1,5 +1,3 @@
-# test_films_api.py
-
 import unittest
 from fixtures.mock_data import MOCKED_API_RESPONSE
 

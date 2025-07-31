@@ -1,4 +1,3 @@
-# tests/test_movie_species.py
 import pytest
 from pages.movies_page import MoviesPage
 

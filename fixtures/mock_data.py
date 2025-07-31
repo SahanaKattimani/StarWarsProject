@@ -1,6 +1,3 @@
-# mock_data.py
-
-# This dictionary simulates the JSON response from the 'https://swapi-node.vercel.app/api/films' API.
 MOCKED_API_RESPONSE = {
     "count": 6,
     "pages": 1,

@@ -1,4 +1,3 @@
-# pages/movies_page.py
 from base.base_page import BasePage
 from locators.movies_page_locators import MoviesPageLocators
 from pages.movie_details_page import MovieDetailsPage
