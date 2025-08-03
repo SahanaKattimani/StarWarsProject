@@ -26,5 +26,4 @@ class MovieDetailsPage(BasePage):
     def go_back_to_movies_list(self):
         """Clicks the back button/link to return to the main movies list."""
         self.click(MovieDetailsPageLocators.BACK_TO_MOVIES_LINK)
-        from pages.movies_page import MoviesPage # Import here to avoid circular dependency
         return MoviesPage(self.driver)

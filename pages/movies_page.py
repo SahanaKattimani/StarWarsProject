@@ -2,6 +2,7 @@ from base.base_page import BasePage
 from locators.movies_page_locators import MoviesPageLocators
 from pages.movie_details_page import MovieDetailsPage
 
+
 class MoviesPage(BasePage):
 
     URL = "http://localhost:3000/"
@@ -28,3 +29,12 @@ class MoviesPage(BasePage):
         locator = MoviesPageLocators.MOVIE_TITLE_LINK_BY_TEXT(movie_title)
         self.click(locator)
         return MovieDetailsPage(self.driver)
+
+    def sort_director_title(self):
+        """Clicks director title link to sort movies by director title."""
+        self.click(MoviesPageLocators.DIRECTOR_HEADER)
+
+    def get_all_movie_directors(self):
+        """Retrieves a list of all movie directors displayed in the table."""
+        title_elements = self.find_elements(MoviesPageLocators.DIRECTOR_NAMES)
+        return [element.text for element in title_elements]
