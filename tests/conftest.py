@@ -9,6 +9,6 @@ def driver():
     # Use webdriver_manager to automatically download and manage ChromeDriver
     service = ChromeService(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
-    driver.maximize_window() # [1]
-    yield driver # [1]
-    driver.quit() # [1]
+    driver.maximize_window()
+    yield driver
+    driver.quit()
